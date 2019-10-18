@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html  id="s1">
+<title>1kinger websajto</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+.dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.updn {font-size: 150%;
+padding:0;}
+
+
+
+.show {
+  display: block;
+}
+
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+
+/* The Modal (background) */
+.w0-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.w0-modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+
+
+
+<body id="myPage" >
+
+<!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+    <i class="fa fa-remove"></i>
+  </a>
+  <a onclick="document.getElementById('1p1').style.display='block';w3_close();" class="w3-bar-item w3-button">Nanly 32</a>
+  <a onclick="document.getElementById('2p2').style.display='block';w3_close();" class="w3-bar-item w3-button">Special space force defenders</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button">Link 4</a>
+  <a href="#" class="w3-bar-item w3-button">Link 5</a>
+</nav>
+
+<!-- Navbar  w3-teal bese staroto -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#s1" class="w3-bar-item w3-button" style="background-color:rgba(7,16,132,0.5)"><i class="fa fa-home w3-margin-right"></i> <img src="./l36x36.png" style="width:30px;position:relative;"></a>
+  <a href="#s2" onclick="openNav()" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Intro</a>
+  <a href="#s3" onclick="openNav()" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
+  <a href="#s4" onclick="openNav()" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Projects</a>
+    <div class="w3-dropdown w3-hide-small  w3-right  w3-button"  onclick="mDn()">
+    <button class="w3-button ">Language </button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block"  id="LDw" >
+	
+	
+
+<a  class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-light-grey"  id="google_translate_element"></a>
+    </div>
+	
+  <div class=" w3-button  w3-right updn"  >
+  <span id="dwn" style="display:block"> &#x21D3;</span> <span id="upp" style="display:none"> &#x21D1;</span> 
+  </div>
+	
+  </div> 
+  <!--
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+ -->
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div href="#s1"id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="#s2" onclick="openNav()" class="w3-bar-item w3-button">Intro</a>
+    <a href="#s3" onclick="openNav()" class="w3-bar-item w3-button">About</a>
+    <a href="#s4" onclick="openNav()" class="w3-bar-item w3-button">Projects</a>
+<a  class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal"  id="google_translate_element"></a>
+  </div>
+</div>
+
+<!-- Modal tk -->
+<div id="idtk" class="w0-modal">
+  <div class="w0-modal-content w3-card-4 w3-animate-top">
+    <header class="w3-container w3-teal w3-display-container"> 
+      <span onclick="document.getElementById('idtk').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+      <h4>About 1kinger</h4>
+    </header>
+    <div class="w3-container" width="80%"  >
+	
+	  <img src="https://www.w3schools.com/w3images/tablesetting2.jpg" class="w3-round w3-image w3-opacity-min " width="70%" height="25%" >
+   
+	
+     
+  
+    </div>
+</div>
+</div>
+<!-- Modal -->
+<div id="id01" class="w0-modal">
+  <div class="w0-modal-content w3-card-4 w3-animate-top">
+    <header class="w3-container w3-teal w3-display-container"> 
+      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+      <h4>About 1kinger</h4>
+    </header>
+    <div class="w3-container">
+	
+<div>
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large  w3-center">
+     <img src="https://www.w3schools.com/w3images/tablesetting2.jpg" class="w3-round w3-image w3-opacity-min " alt="Table Setting" width="70%" >
+    
+	 <h5 class="w3-center  w3-text-grey">how can we motivate 1kinger??</h5>
+      <p class="w3-large w3-text-grey w3-hide-medium">
+	you can motivte trught social media. it will be nice that you if you shere this story to other people. i dont have plans to get famos on that social media , just created it to work as modern forum for people to coperate each other with any quastion , critics , sugestion , comentars and somthink like that..  
+	  </p>
+	
+	</div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">how much worth 1kinger ??</h1><br>
+
+      <p class="w3-large">
+	  
+	1kinger is doing all this things with out any financal support from any company. Also 1kinger isnt oficial legaly registred company which means that cant use the company privilage benefits like stock market shares, funds from investors, hevy bank credits, greedy subvencional funds, tax return etc..  .isnt use any  patreon,kickstart or any kind of dontaion for this whoul project ,. i do also somehow some other activity for chas flow.  that is the reason why my progres is litel bit slower to fix or create new projects.
+	  <p></p>
+	  <span class="w3-tag w3-light-grey">seasonal</span> ingredients.</p>
+	 <h5 class="w3-center  w3-text-grey">is there lincense by 1kinger for using 1kinger's products??</h5>
+      <p class="w3-center ">
+	  
+	  by default apsolutly 100% NO any lincense , no any agrremant & term of service and etc.. things.  
+	  
+	  </p>
+	  
+	  
+    </div>
+  </div>
+  
+  <hr>
+  </div>
+  
+     
+  
+    </div>
+    <footer class="w3-container w3-teal">
+	
+      <p class="w3-center">fresh info @ social media    <span class="w3-right" onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-botright"><i class="fa fa-remove"></i></span>
+     </p>
+	  
+    
+    </footer>
+  </div>
+</div>
+
+
+
+
+<div id="1p1" class="w0-modal">
+  <div class="w0-modal-content w3-card-4 w3-animate-top"  style="top:0px;left:10%;">
+    <header class="w3-container w3-teal w3-display-container"> 
+      <span onclick="document.getElementById('1p1').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+      <h4>Nanly 32</h4>
+	  
+    </header>
+    <div class="w3-container">
+	
+	
+	
+<div id="myPage">
+
+<!-- Icon Bar (Sidebar - hidden on small screens)//////////////////////////nanly32 -->
+<nav class="w3-sidebar w3-bar-block w3-center "  style="font-size:55%;position:fixed;left:0px;top:0px;width:20%;z-index:555;overflow:hidden;" >
+  <!-- Avatar image in top left corner -->
+  <img src="./g192.png" style="width:70%">
+  <a href="#homeP1" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#workP1" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#spechP1" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xlarge"></i>
+    <p>PHOTOS</p>
+  </a>
+  <a  onclick="Frm1();document.getElementById('1p1').style.display='none';document.getElementById('gtp').style.display='block'" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-close w3-xlarge"></i>
+
+  </a>
+</nav>
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity" id="homeP1">
+  <img src="https://www.w3schools.com/w3images/sailboat.jpg" alt="boat" style="width:100%;min-height:350px;max-height:600px;">
+</div>
+
+<!-- Work Row -->
+<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="workP2">
+
+<div class="w3-quarter">
+<h2>Nanly 32</h2>
+<p>
+Nanly 32 is android games colection app that is inspirated from old school MAME32 (ahh whata enjoyble woriless time,,). This app  allow you to play nonstop anywere what you wana , how you wanna  from reach selectio of 500+ games. this app use free game from mostwanted games html5 (HERE HAVE THYR CREDIT !!)that also allow you to save you progres in RAM memory. Once played when you have internet conection , you will be avaibele to play it endles weil the app isht shut it down.. see any video there is better discribed 
+
+</p>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+<div   id="F1Fv1"  ></div>
+<iframe id="1pv1" width="100%"  src="https://www.youtube.com/embed/U0fk5L1ifbo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- <iframe width="100%" src="https://www.youtube.com/embed/W9P_qUnMaFg?list=RDCLAK5uy_n7Y4Fp2-4cjm5UUvSZwdRaiZowRs5Tcz0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ <img src="https://www.w3schools.com/w3images/snow.jpg" alt="Snow" style="width:100%">
+ --> <div  class="w3-container">
+  <h3>Customer 1</h3>
+  <h4>Trade</h4>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+<div   id="F1Fv2"  ></div>
+<iframe id="1pv2" width="100%" src="https://www.youtube.com/embed/jQUQfvWsH20" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <div class="w3-container">
+  <h3>Customer 2</h3>
+  <h4>Trade</h4>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+<div   id="F1Fv3"  ></div>
+<iframe id="1pv3" width="100%" src="https://www.youtube.com/embed/G4DZwDyPrX0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <div class="w3-container">
+  <h3>Customer 3</h3>
+  <h4>Trade</h4>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  </div>
+  </div>
+</div>
+
+</div>
+
+
+
+<!-- Contact Container -->
+<div class="w3-container w3-padding-64 w3-theme-l5" id="spechP1">
+  <div class="w3-row">
+    <div class="w3-col m5">
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
+      <h3>Address</h3>
+      <p>Swing by for a cup of coffee, or whatever.</p>
+      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Chicago, US</p>
+      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +00 1515151515</p>
+      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  test@test.com</p>
+    </div>
+    <div class="w3-col m7">	
+	<p class="w3-center ">TECHNICAL SPECIFICATIONS :</p>
+      <form class="w3-container w3-card-4 w3-padding-16 w3-white" >
+      <div class="w3-section">
+	  <label class="w3-input" type="text">mobile divace : Android (kitkat an newer)</label>
+	  
+      </div>
+      <div class="w3-section">      
+    <label class="w3-input" type="text">memory ROM sortage : 50MB</label>
+      </div>
+      <div class="w3-section">      
+    <label class="w3-input" type="text">memory RAM usage : 20-30MB</label>
+      </div>
+      <div class="w3-section">      
+  <label class="w3-input" type="text">app  version available : N32 ,N32+ssfd  </label>
+      </div>  
+     <div class="w3-section">      
+  <label class="w3-input" type="text">uste nekoje teksce : ke se dodade tuka</label>
+		
+      </div> 
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+    </div>
+    <footer class="w3-container w3-teal w3-center">
+      <p>relised 1-11-2019 by 1kinger</p>
+    </footer>
+  </div>
+</div>
+
+
+
+
+<div id="2p2" class="w0-modal" style="overflow: auto;" >
+  <div class="w0-modal-content w3-card-4 w3-animate-top" style="top:0px;left:10%;">
+    <header class="w3-container w3-teal w3-display-container" > 
+      <span onclick="document.getElementById('2p2').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+      <h4 style="text-align:center;">Elit space force defenders</h4>
+	  
+    </header>
+    <div class="w3-container">
+   
+   
+   
+<div id="myPage">
+
+<!-- Icon Bar (Sidebar - hidden on small screens)//////////////////////////nanly32 -->
+<nav class="w3-sidebar w3-bar-block w3-center "  style="font-size:55%;position:fixed;left:0px;top:0px;width:20%;z-index:555;overflow:hidden;" >
+  <!-- Avatar image in top left corner -->
+  <img src="https://www.w3schools.com/w3images/avatar_smoke.jpg" style="width:55%">
+  <a href="#homeP2" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#workP2" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#spechP2" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xlarge"></i>
+    <p>PHOTOS</p>
+  </a>
+  <a  onclick="Frm2();document.getElementById('2p2').style.display='none';document.getElementById('gtp').style.display='block'" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-close w3-xlarge"></i>
+
+  </a>
+</nav>
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity" id="homeP2">
+  <img src="https://www.w3schools.com/w3images/sailboat.jpg" alt="boat" style="width:100%;min-height:350px;max-height:600px;">
+</div>
+
+<!-- Work Row -->
+<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="workP2">
+
+<div class="w3-quarter">
+<h2>Special space force defenders Intro</h2>
+<p>
+groupe of seintis are traped in sicret planet nlp-341-1a that theyr scintific exploration gos in wrong wey. but they acauly destroying the planet for other spicies that are very (relly , realyy very) angry about that. that wass green light for SSFD to the rescye them. how will they be saved is dependig of your in real time fast action thinking ,,,,
+</p>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+
+<div   id="F2Fv1"  ></div>
+<iframe id="2pv1" width="100%"  src="https://www.youtube.com/embed/U0fk5L1ifbo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- <iframe width="100%" src="https://www.youtube.com/embed/W9P_qUnMaFg?list=RDCLAK5uy_n7Y4Fp2-4cjm5UUvSZwdRaiZowRs5Tcz0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ <img src="https://www.w3schools.com/w3images/snow.jpg" alt="Snow" style="width:100%">
+ --> <div class="w3-container">
+  <h3>Customer 1</h3>
+  <h4>Trade</h4>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+<div   id="F2Fv2"  ></div>
+<iframe id="2pv2" width="100%" src="https://www.youtube.com/embed/G4DZwDyPrX0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  <div class="w3-container">
+  <h3>Customer 2</h3>
+  <h4>Trade</h4>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+<div   id="F2Fv3"  ></div>
+<iframe id="2pv3" width="100%" src="https://www.youtube.com/embed/UMHPVBOxIsE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <div class="w3-container">
+  <h3>Customer 3</h3>
+  <h4>Trade</h4>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  </div>
+  </div>
+</div>
+
+</div>
+
+
+
+<!-- Contact Container -->
+<div class="w3-container w3-padding-64 w3-theme-l5" id="spechP2">
+  <div class="w3-row">
+    <div class="w3-col m5">
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
+      <h3>Address</h3>
+      <p>Swing by for a cup of coffee, or whatever.</p>
+      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Chicago, US</p>
+      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +00 1515151515</p>
+      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  test@test.com</p>
+    </div>
+    <div class="w3-col m7">	
+	<p class="w3-center ">TECHNICAL SPECIFICATIONS :</p>
+      <form class="w3-container w3-card-4 w3-padding-16 w3-white" >
+      <div class="w3-section">
+	  <label class="w3-input" type="text">mobile divace : Android (kitkat an newer)</label>
+	  
+      </div>
+      <div class="w3-section">      
+    <label class="w3-input" type="text">memory ROM sortage : 50MB</label>
+      </div>
+      <div class="w3-section">      
+    <label class="w3-input" type="text">memory RAM usage : 20-30MB</label>
+      </div>
+      <div class="w3-section">      
+  <label class="w3-input" type="text">app  version available : ssfd </label>
+      </div>  
+     <div class="w3-section">      
+  <label class="w3-input" type="text">uste nekoje teksce : ke se dodade tuka</label>
+		
+      </div> 
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+</div>
+    </div>
+    <footer class="w3-container w3-teal w3-center ">
+      <p>relise 1-11-2019 by 1kinger</p>
+    </footer>
+  </div>
+</div>
+
+
+
+<div  style="position:apsolute;top:0px;" > </div>
+<!-- Content++++++++++++ -->
+<div class="w3-content" style="max-width:1100px;margin-top:50px;margin-bottom:80px">
+
+  <div class="w3-panel">
+    <h1 class="w3-center" ><b>1KINGER </b></h1>
+	
+  </div>
+
+  <!-- Slideshow -->
+  <div class="w3-container">
+  
+  
+
+    <div class="w3-display-container mySlides">
+      <img src="https://www.w3schools.com/w3images/coffee.jpg" style="width:100%">
+ 
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="https://www.w3schools.com/w3images/workbench.jpg" style="width:100%">
+    
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="https://www.w3schools.com/w3images/sound.jpg" style="width:100%">
+
+    </div>
+
+    <!-- Slideshow next/previous buttons -->
+    <div class="w3-container  w3-padding w3-xlarge " style="background: linear-gradient(to bottom, 	rgba(255, 255, 255,0) 10%, rgba(0, 136, 255,0.95) 60%);position:relative;top:-33px;">
+      <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
+      <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i></div>
+    
+
+
+    </div>
+  </div>
+  
+  <!-- Grid -->
+  <div id="s2" class="w3-row w3-container">
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16"> why is  "1kinger" creted ?</span>
+    </div>
+    <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16">
+      <h3>Inspiration</h3>
+      <p>I doing this as hobby and chalange to do hard and usfule things as low cost as it can be</p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-grey w3-container w3-padding-16">
+      <h3> 107% Freedom</h3>
+      <p>Im doing this complitly alone with out any supervaisor or boss that can stop my progres</p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-dark-grey w3-container w3-padding-16">
+      <h3>Brend</h3>
+      <p>1kinger is just self-declared name for avoiding  identity and/or anti-discrimination problem</p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-black w3-container w3-padding-16">
+      <h3>Focus</h3>
+      <p>just doing somthink that meybe can meke the world better and enjoyable place for everyone</p>
+    </div>
+  </div>
+
+
+  <!-- Grid -->
+  <div class="w3-row-padding" >
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">What is "1kinger" special for??</span>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4 ">
+        <img src="./GGNOads.jpg" style="width:100%">
+        <div class="w3-container">
+          <h3>NO ADDS</h3>
+          <p class="w3-opacity">@ start</p>
+          <p>there isnt any adds in containt in any of products that are relised</p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4 ">
+        <img src="./GGnoDDTacOL.jpg" style="width:100%">
+        <div class="w3-container">
+          <h3>NO any data colection</h3>
+          <p class="w3-opacity">@ start</p>
+          <p>"1kinger" isnt taking it back any PERSONAL or DIVAICE or SOFTWARE data info from clients. no login account requarment </p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom ">
+      <div class="w3-card-4 ">
+        <img src="./GGparkoTRG.jpg"  style="width:100%">
+        <div class="w3-container">
+          <h3>Our Target group</h3>
+          <p class="w3-opacity">@ start</p>
+          <p>Main targer is people thata prefere use economy class life style, but everyone is wellcome</p>
+
+        </div>
+      </div>
+    </div>
+<!-- 
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="https://www.w3schools.com/w3images/team3.jpg" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>John Doe</h3>
+          <p class="w3-opacity">@ start</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  
+  -->
+  
+  
+  </div>
+
+
+
+</div>
+
+
+
+
+<!-- Team Container  
+
+
+
+<div class="w3-container w3-padding-64 w3-center" id="team">
+<h2>OUR TEAM</h2>
+<p>Meet the team - our office rats:</p>
+
+<div class="w3-row"><br>
+
+<div class="w3-quarter">
+  <img src="https://www.w3schools.com/w3images/avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Johnny Walker</h3>
+  <p>Web Designer</p>
+</div>
+
+
+
+
+<div class="w3-quarter">
+  <img src="https://www.w3schools.com/w3images/avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Rebecca Flex</h3>
+  <p>Support</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="https://www.w3schools.com/w3images/avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Jan Ringo</h3>
+  <p>Boss man</p>
+</div>
+
+<div class="w3-quarter">
+  <img src="https://www.w3schools.com/w3images/avatar.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Kai Ringo</h3>
+  <p>Fixer</p>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+ Image Header -->
+<div id="s3" class="w3-display-container w3-animate-opacity">
+  <img src="./GGzaUbsSITE.jpg" style="width:100%;min-height:350px;max-height:600px;">
+  <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge  w3-hover-grey"style="background-color:rgb(78,130,152);" >Learn about 1kinger</button>
+  </div>
+</div>
+
+<!-- Work Row  <div class="w3-row-padding w3-padding-64 w3-theme-l1"  id="s4"> -->
+<div class="w3-row-padding w3-padding-64 " style="background-color:rgb(7,16,32);color:white" id="s4">
+
+<div class="w3-quarter">
+<h2 >Our Wor(king) projekts</h2>
+<p>
+I have some good ideat that i dewolp for world wide usage thata i think can help to someone somhow in any way. Here you can see all my projetcs that im doing.. many more will come in near future..
+
+</p>
+</div>
+
+<div class="w3-quarter ">
+<div class="w3-card w3-white ">
+  <img src="./GGfotka nanlito sjt.jpg"  style="width:100%">
+  <div class="w3-container">
+  <h3>Nanly 32</h3>
+  <h4>android app/(game)</h4>
+  <p>play 500+ game</p>
+  <p>save your game</p>
+  <p>5 memory sectors</p>
+  <p>easy screen adjystment</p>
+  
+   <p><button class="w3-button w3-block w3-green w3-round" onclick="FaDm1();document.getElementById('1p1').style.display='block';document.getElementById('gtp').style.display='none'">see this projet </i></button></p>
+
+  </div>        
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white ">
+  <img src="https://www.w3schools.com/w3images/lights.jpg"  alt="Lights" style="width:100%">
+  <div class="w3-container">
+  <h3>Special space force defenders</h3>
+  <h4>android app/(game)</h4>
+  <p>unique game expirience</p>
+  <p>5 heros with 6 difrend mods</p>
+  <p>akction arcade game</p>
+  <p>easy screen adjystment</p>
+  
+  
+   <p><button class="w3-button w3-block w3-green w3-round" onclick="FaDm2();document.getElementById('2p2').style.display='block';document.getElementById('gtp').style.display='none'">see this projet </i></button></p>
+
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter" style="opacity:0.05;">
+<div class="w3-card w3-white ">
+  <img src="https://www.w3schools.com/w3images/mountains.jpg" alt="Mountains" style="width:100%">
+  <div class="w3-container">
+  <h3>future proect</h3>
+  <h4>comming soon</h4>
+  <p>(no detals)</p>
+  <p>(no detals)</p>
+  <p>(no detals)</p>
+  <p>(no detals)</p>
+  </div>
+  </div>
+</div>
+
+</div>
+
+<!-- Container  ovaa e toa plusceto sto iskacaaa -->
+<div class="w3-container" style="position:relative">
+  <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
+  style="position:absolute;top:-28px;right:24px">+</a>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>1kinger is using this social media:</h4>
+<div style="position:apsolute;" >
+
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" onclick="window.open('https://www.youtube.com/channel/UCVM2N31UIa0XZWc2SspRekg/videos')"  ><i class="fab fa-youtube"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" onclick="window.open('https://twitter.com/super1kinger')" title="Twitter"><i class="fab fa-twitter"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)"  onclick="document.getElementById('idtk').style.display='block'" style="position:relative;width:44px;height:43px">
+  
+    <svg xmlns="http://www.w3.org/2000/svg"  stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" style="margin-left:-10px;margin-top:-2px;}">
+        <g  transform="translate(0.979236, 0.000000)" fill-rule="nonzero">
+            <path d="M10.7907645,12.33 L10.7907645,11.11 C10.3672629,11.0428887 9.93950674,11.0061284 9.51076448,10.9999786 C5.35996549,10.9912228 1.68509679,13.6810205 0.438667694,17.6402658 C-0.807761399,21.5995112 0.663505842,25.9093887 4.07076448,28.28 C1.51848484,25.5484816 0.809799545,21.5720834 2.26126817,18.1270053 C3.71273679,14.6819273 7.05329545,12.4115428 10.7907645,12.33 L10.7907645,12.33 Z" id="路径" fill="#25F4EE"/>
+            <path d="M11.0207645,26.15 C13.3415287,26.1468776 15.2491662,24.3185414 15.3507645,22 L15.3507645,1.31 L19.1307645,1.31 C19.0536068,0.877682322 19.0167818,0.439130992 19.0207645,0 L13.8507645,0 L13.8507645,20.67 C13.764798,23.0003388 11.8526853,24.846212 9.52076448,24.85 C8.82390914,24.844067 8.13842884,24.6726969 7.52076448,24.35 C8.33268245,25.4749154 9.63346203,26.1438878 11.0207645,26.15 Z" id="路径" fill="#25F4EE"/>
+            <path d="M26.1907645,8.33 L26.1907645,7.18 C24.79964,7.18047625 23.4393781,6.76996242 22.2807645,6 C23.2964446,7.18071769 24.6689622,7.99861177 26.1907645,8.33 L26.1907645,8.33 Z" id="路径" fill="#25F4EE"/>
+            <path d="M22.2807645,6 C21.1394675,4.70033161 20.5102967,3.02965216 20.5107645,1.3 L19.1307645,1.3 C19.4909812,3.23268519 20.6300383,4.93223067 22.2807645,6 L22.2807645,6 Z" id="路径" fill="#FE2C55"/>
+            <path d="M9.51076448,16.17 C7.51921814,16.1802178 5.79021626,17.544593 5.31721201,19.4791803 C4.84420777,21.4137677 5.74860956,23.4220069 7.51076448,24.35 C6.55594834,23.0317718 6.42106871,21.2894336 7.16162883,19.8399613 C7.90218896,18.3904889 9.39306734,17.4787782 11.0207645,17.48 C11.4547752,17.4854084 11.8857908,17.5527546 12.3007645,17.68 L12.3007645,12.42 C11.8769919,12.3565056 11.4492562,12.3230887 11.0207645,12.32 L10.7907645,12.32 L10.7907645,16.32 C10.3736368,16.2081544 9.94244934,16.1576246 9.51076448,16.17 Z" id="路径" fill="#FE2C55"/>
+            <path d="M26.1907645,8.33 L26.1907645,12.33 C23.61547,12.3250193 21.107025,11.5098622 19.0207645,10 L19.0207645,20.51 C19.0097352,25.7544158 14.7551919,30.0000116 9.51076448,30 C7.56312784,30.0034556 5.66240321,29.4024912 4.07076448,28.28 C6.72698674,31.1368108 10.8608257,32.0771989 14.4914706,30.6505586 C18.1221155,29.2239183 20.5099375,25.7208825 20.5107645,21.82 L20.5107645,11.34 C22.604024,12.8399663 25.1155724,13.6445013 27.6907645,13.64 L27.6907645,8.49 C27.1865925,8.48839535 26.6839313,8.43477816 26.1907645,8.33 Z" id="路径" fill="#FE2C55"/>
+            <path d="M19.0207645,20.51 L19.0207645,10 C21.1134087,11.5011898 23.6253623,12.3058546 26.2007645,12.3 L26.2007645,8.3 C24.6792542,7.97871265 23.3034403,7.17147491 22.2807645,6 C20.6300383,4.93223067 19.4909812,3.23268519 19.1307645,1.3 L15.3507645,1.3 L15.3507645,22 C15.2751521,23.8467664 14.0381991,25.4430201 12.268769,25.9772302 C10.4993389,26.5114403 8.58570942,25.8663815 7.50076448,24.37 C5.73860956,23.4420069 4.83420777,21.4337677 5.30721201,19.4991803 C5.78021626,17.564593 7.50921814,16.2002178 9.50076448,16.19 C9.934903,16.1938693 10.3661386,16.2612499 10.7807645,16.39 L10.7807645,12.39 C7.0223379,12.4536691 3.65653929,14.7319768 2.20094561,18.1976761 C0.745351938,21.6633753 1.47494493,25.6617476 4.06076448,28.39 C5.66809542,29.4755063 7.57158782,30.0378224 9.51076448,30 C14.7551919,30.0000116 19.0097352,25.7544158 19.0207645,20.51 Z" id="路径" fill="#000000"/>
+        </g>
+    </svg>
+</a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fab fa-discord"></i></a>
+  <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fab fa-android"></i></a>
+
+</div>
+
+  <div id="gtp" style="position:relative;bottom:1px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
+    <a class="w3-button w3-theme" href="#s1"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+  
+  
+</footer>
+
+
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script>
+
+
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>
+
+
+
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+
+
+function mDn() {
+
+  document.getElementById("LDw").classList.toggle("show");
+  if (document.getElementById("dwn").style.display == "none"){
+	   document.getElementById("dwn").style.display = "block"}
+	   else{document.getElementById("dwn").style.display = "none"}
+	   
+  if (document.getElementById("upp").style.display == "none"){
+	   document.getElementById("upp").style.display ="block"}
+	   else{document.getElementById("upp").style.display = "none"}
+  
+}
+
+// Close the dropdown if the user clicks outside of it
+document.getElementById("LDw").onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("LDw");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');  
+	  
+    }
+  }
+}
+
+/////za modalo e ova skripta
+var f1v1 = document.getElementById("1pv1");
+var f1v2 = document.getElementById("1pv2");
+var f1v3 = document.getElementById("1pv3");
+
+var f2v1 = document.getElementById("2pv1");
+var f2v2 = document.getElementById("2pv2");
+var f2v3 = document.getElementById("2pv3");
+
+function FaDm1 (){
+document.getElementById("F1Fv1").appendChild(f1v1);
+document.getElementById("F1Fv2").appendChild(f1v2);
+document.getElementById("F1Fv3").appendChild(f1v3);
+}
+
+function FaDm2 (){
+document.getElementById("F2Fv1").appendChild(f2v1);
+document.getElementById("F2Fv2").appendChild(f2v2);
+document.getElementById("F2Fv3").appendChild(f2v3);
+}
+function Frm1 (){
+f1v1.remove();
+f1v2.remove();
+f1v3.remove();
+}
+
+
+function Frm2 (){
+f2v1.remove();
+f2v2.remove();
+f2v3.remove();
+}
+
+//////za mediata
+
+
+// Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  
+}
+
+
+//////
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+// Close side navigation
+
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
