@@ -9,6 +9,48 @@
 
 <style>
 
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+ 
+ 
+ 
+
 .dropbtn {
   cursor: pointer;
   font-size: 16px;  
@@ -70,13 +112,15 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   text-decoration: none;
   cursor: pointer;
 }
+
 </style>
 
 
 
-<body id="myPage" >
 
-<!-- Sidebar on click -->
+<body id="myPage" style="background-color:rgb(116,122,135)"  >
+
+<!-- Sidebar on click  ova bese myPage bodito-->
 <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xlarge" style="display:none;z-index:2" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
     <i class="fa fa-remove"></i>
@@ -125,20 +169,47 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 </div>
 
 <!-- Modal tk -->
-<div id="idtk" class="w0-modal">
-  <div class="w0-modal-content w3-card-4 w3-animate-top">
+<div id="idtk" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-top">
     <header class="w3-container w3-teal w3-display-container"> 
       <span onclick="document.getElementById('idtk').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
       <h4>About 1kinger</h4>
     </header>
-    <div class="w3-container" width="80%"  >
-	
-	  <img src="https://www.w3schools.com/w3images/tablesetting2.jpg" class="w3-round w3-image w3-opacity-min " width="70%" height="25%" >
-   
-	
+    <div class="w3-container"   >
+	<div class="w3-col m6 w3-padding-xxlarge  w3-center">
+	  <img src="https://www.w3schools.com/w3images/tablesetting2.jpg" class="w3-round w3-image w3-opacity-min " width="100%"  >
+ 
+ </div>
+ 
+ <div class="w3-col m6 w3-padding-large" >
+ <input style="display:none" value="super1kinger" id="myInput">
+ 
+  <p class="w3-large">
+  You can find me @super1kinger on tiktok app
+  
+  <p>
+
+<div class="tooltip">
+<button onclick="myFCP()" onmouseout="outFunc()" style="background-color:rgb(78,130,152);" >
+  <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+ <span style='font-size:300%;'>&#128221; </span>
+  </button>
+</div>
+</div>
+
      
   
     </div>
+	
+	
+ <footer class="w3-container w3-teal">
+	
+      <p class="w3-center">fresh info @ social media    <span class="w3-right" onclick="document.getElementById('idtk').style.display='none'" class="w3-button w3-teal w3-display-botright"><i class="fa fa-remove"></i></span>
+     </p>
+	  
+    
+   </footer>
+	
 </div>
 </div>
 <!-- Modal -->
@@ -205,7 +276,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <div id="1p1" class="w0-modal">
   <div class="w0-modal-content w3-card-4 w3-animate-top"  style="top:0px;left:10%;">
     <header class="w3-container w3-teal w3-display-container"> 
-      <span onclick="document.getElementById('1p1').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+      <span onclick="Frm1();document.getElementById('1p1').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
       <h4>Nanly 32</h4>
 	  
     </header>
@@ -255,7 +326,7 @@ Nanly 32 is android games colection app that is inspirated from old school MAME3
 <div class="w3-quarter">
 <div class="w3-card w3-white">
 <div   id="F1Fv1"  ></div>
-<iframe id="1pv1" width="100%"  src="https://www.youtube.com/embed/U0fk5L1ifbo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe id="1pv1" width="100%"  src="https://www.youtube.com/embed/ocK-64jsfHM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <!-- <iframe width="100%" src="https://www.youtube.com/embed/W9P_qUnMaFg?list=RDCLAK5uy_n7Y4Fp2-4cjm5UUvSZwdRaiZowRs5Tcz0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
  <img src="https://www.w3schools.com/w3images/snow.jpg" alt="Snow" style="width:100%">
  --> <div  class="w3-container">
@@ -369,7 +440,7 @@ Nanly 32 is android games colection app that is inspirated from old school MAME3
 <div id="2p2" class="w0-modal" style="overflow: auto;" >
   <div class="w0-modal-content w3-card-4 w3-animate-top" style="top:0px;left:10%;">
     <header class="w3-container w3-teal w3-display-container" > 
-      <span onclick="document.getElementById('2p2').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+      <span onclick="Frm2();document.getElementById('2p2').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
       <h4 style="text-align:center;">Elit space force defenders</h4>
 	  
     </header>
@@ -528,11 +599,11 @@ groupe of seintis are traped in sicret planet nlp-341-1a that theyr scintific ex
   </div>
 
   <!-- Slideshow -->
-  <div class="w3-container">
+  <div class="w3-container ">
   
   
 
-    <div class="w3-display-container mySlides">
+    <div class="w3-display-container mySlides ">
       <img src="https://www.w3schools.com/w3images/coffee.jpg" style="width:100%">
  
     </div>
@@ -546,7 +617,7 @@ groupe of seintis are traped in sicret planet nlp-341-1a that theyr scintific ex
     </div>
 
     <!-- Slideshow next/previous buttons -->
-    <div class="w3-container  w3-padding w3-xlarge " style="background: linear-gradient(to bottom, 	rgba(255, 255, 255,0) 10%, rgba(0, 136, 255,0.95) 60%);position:relative;top:-33px;">
+    <div class="w3-container  w3-padding w3-xlarge " style="background: linear-gradient(to bottom, 	rgba(255, 255, 255,0) 10%, rgba(116,122,135,0.95) 60%);position:relative;top:-33px;">
       <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
       <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i></div>
     
@@ -696,7 +767,7 @@ groupe of seintis are traped in sicret planet nlp-341-1a that theyr scintific ex
 <div id="s3" class="w3-display-container w3-animate-opacity">
   <img src="./GGzaUbsSITE.jpg" style="width:100%;min-height:350px;max-height:600px;">
   <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
-    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge  w3-hover-grey"style="background-color:rgb(78,130,152);" >Learn about 1kinger</button>
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge  w3-hover-grey" style="background-color:rgb(78,130,152);" >Learn about 1kinger</button>
   </div>
 </div>
 
@@ -790,12 +861,12 @@ I have some good ideat that i dewolp for world wide usage thata i think can help
         </g>
     </svg>
 </a>
-  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fab fa-discord"></i></a>
-  <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fab fa-android"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" onclick="window.open('https://discordapp.com/invite/7Wh3wA9')" ><i class="fab fa-discord"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" ><i class="fab fa-android"></i></a>
 
 </div>
 
-  <div id="gtp" style="position:relative;bottom:1px;z-index:1;" class="w3-tooltip w3-right">
+  <div id="gtp" style="position:relative;bottom:-3px;z-index:1;" class="w3-tooltip w3-right">
     <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
     <a class="w3-button w3-theme" href="#s1"><span class="w3-xlarge">
     <i class="fa fa-chevron-circle-up"></i></span></a>
@@ -803,9 +874,6 @@ I have some good ideat that i dewolp for world wide usage thata i think can help
   
   
 </footer>
-
-
-
 <script type="text/javascript">
 function googleTranslateElementInit() {
   new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
@@ -820,6 +888,20 @@ function googleTranslateElementInit() {
 
 
 
+function myFCP() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+  
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copied: " + copyText.value;
+}
+
+function outFunc() {
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copy to clipboard";
+}
 
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
@@ -939,6 +1021,9 @@ function openNav() {
     x.className = x.className.replace(" w3-show", "");
   }
 }
+
+
+
 </script>
 
 </body>
