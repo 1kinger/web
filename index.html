@@ -144,9 +144,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <button class="w3-button ">Language </button>     
     <div class="w3-dropdown-content w3-card-4 w3-bar-block"  id="LDw" >
 	
-	
-
-<a  class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-light-grey"  id="google_translate_element"></a>
+	<a  class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-light-grey"  id="google_translate_element"></a>
     </div>
 	
   <div class=" w3-button  w3-right updn"  >
@@ -161,9 +159,9 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
   <!-- Navbar on small screens -->
   <div href="#s1" onclick="openNav()" id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
-    <a href="#s2" onclick="openNav()" class="w3-bar-item w3-button">Intro</a>
-	
-<a  class="w3-bar-item w3-button "  id="google_translate_element_2"></a>
+    <a id="OOg" href="#s2" onclick="openNav()" class="w3-bar-item w3-button">Intro</a>
+
+<a id="GT_B"></a>
 
     <a href="#s3" onclick="openNav()" class="w3-bar-item w3-button">About</a>
     <a href="#s4" onclick="openNav()" class="w3-bar-item w3-button">Projects</a>
@@ -865,18 +863,13 @@ I have some good ideat that i dewolp for world wide usage thata i think can help
     <a class="w3-button w3-theme" href="#s1"><span class="w3-xlarge">
     <i class="fa fa-chevron-circle-up"></i></span></a>
   </div>
-  
-  
+    
 </footer>
+
+
 <script type="text/javascript">
 function googleTranslateElementInit() {
    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-}
-
-</script>
-<script>
-function googleTranslateElementInit_2() {
-   new google.translate.TranslateElement_2({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element_2');
 }
 </script>
 
@@ -884,7 +877,7 @@ function googleTranslateElementInit_2() {
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit_2"></script>
+
 <script>
 
 
@@ -931,6 +924,10 @@ document.getElementById("LDw").onclick = function(e) {
     }
   }
 }
+///GT
+
+var GTr  = document.getElementById("google_translate_element");
+
 
 /////za modalo e ova skripta
 var f1v1 = document.getElementById("1pv1");
@@ -1018,10 +1015,16 @@ function openNav() {
   var x = document.getElementById("navDemo");
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
+document.getElementById("OOg").appendChild(GTr);
   } else { 
     x.className = x.className.replace(" w3-show", "");
+GTr.remove();
   }
 }
+
+
+
+
 
 
 </script>
