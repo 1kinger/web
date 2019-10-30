@@ -7,6 +7,13 @@
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+</head>
+
 <style>
 
 
@@ -120,6 +127,32 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 <body id="myPage" style="background-color:rgb(116,122,135)"  >
 
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModalGT" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+		
+		  <div class="w3-dropdown-content w3-card-4 w3-bar-block"  id="LDw" >
+	
+	<a  class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-light-grey"  id="google_translate_element"></a>
+	
+    </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <!-- Sidebar on click  ova bese myPage bodito-->
 <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xlarge" style="display:none;z-index:2" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
@@ -141,11 +174,11 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <a href="#s3" onclick="openNav()" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
   <a href="#s4" onclick="openNav()" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Projects</a>
     <div class="w3-dropdown w3-hide-small  w3-right  w3-button"  onclick="mDn()">
-    <button class="w3-button ">Language </button>     
-    <div class="w3-dropdown-content w3-card-4 w3-bar-block"  id="LDw" >
-	
-	<a  class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-light-grey"  id="google_translate_element"></a>
-    </div>
+  <!--  <button class="w3-button ">Language </button>     
+   -->
+
+  <button type="button"  data-toggle="modal" data-target="#myModalGT"  class="w3-button ">Language </button>	
+ 
 	
   <div class=" w3-button  w3-right updn"  >
   <span id="dwn" style="display:block"> &#x21D3;</span> <span id="upp" style="display:none"> &#x21D1;</span> 
@@ -160,11 +193,10 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <!-- Navbar on small screens -->
   <div href="#s1" onclick="openNav()" id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
     <a href="#s2" onclick="openNav()" class="w3-bar-item w3-button">Intro</a>
-
-<a id="GT_B"></a>
-
     <a href="#s3" onclick="openNav()" class="w3-bar-item w3-button">About</a>
     <a href="#s4" onclick="openNav()" class="w3-bar-item w3-button">Projects</a>
+	  
+  <button type="button"  data-toggle="modal" data-target="#myModalGT"  class="w3-button ">Language </button>	   
   </div>
 </div>
 
@@ -924,11 +956,6 @@ document.getElementById("LDw").onclick = function(e) {
     }
   }
 }
-///GT
-
-var GTr  = document.getElementById("google_translate_element");
-
-
 /////za modalo e ova skripta
 var f1v1 = document.getElementById("1pv1");
 var f1v2 = document.getElementById("1pv2");
@@ -1015,14 +1042,8 @@ function openNav() {
   var x = document.getElementById("navDemo");
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
-document.getElementById("GT_B").appendChild(GTr);
-
-
-googleTranslateElementInit();
-
   } else { 
     x.className = x.className.replace(" w3-show", "");
-GTr.remove();
   }
 }
 
