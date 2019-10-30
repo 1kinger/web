@@ -159,7 +159,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
   <!-- Navbar on small screens -->
   <div href="#s1" onclick="openNav()" id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
-    <a id="OOg" href="#s2" onclick="openNav()" class="w3-bar-item w3-button">Intro</a>
+    <a href="#s2" onclick="openNav()" class="w3-bar-item w3-button">Intro</a>
 
 <a id="GT_B"></a>
 
@@ -1015,7 +1015,11 @@ function openNav() {
   var x = document.getElementById("navDemo");
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
-document.getElementById("OOg").appendChild(GTr);
+document.getElementById("GT_B").appendChild(GTr);
+
+
+googleTranslateElementInit();
+
   } else { 
     x.className = x.className.replace(" w3-show", "");
 GTr.remove();
