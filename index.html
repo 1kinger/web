@@ -188,11 +188,12 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
   <!-- Navbar on small screens -->
   <div href="#s1" onclick="openNav()" id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
-    <a href="#s2" onclick="openNav()" class="w3-bar-item w3-button">Intro</a>
-    <a href="#s3" onclick="openNav()" class="w3-bar-item w3-button">About</a>
-    <a href="#s4" onclick="openNav()" class="w3-bar-item w3-button">Projects</a>
+    <a href="#s2" onclick="openNavCL()" class="w3-bar-item w3-button">Intro</a>
+    <a href="#s3" onclick="openNavCL()" class="w3-bar-item w3-button">About</a>
+    <a href="#s4" onclick="openNavCL()" class="w3-bar-item w3-button">Projects</a>
 	  
-  <a data-toggle="modal" data-target="#myModalGT"  onclick="openNav()" class="w3-button w3-bar-item">Language </a>	   
+  <a data-toggle="modal" data-target="#myModalGT"  onclick="openNavCL()" class="w3-button w3-bar-item">Language </a>	
+
   </div>
 </div>
 
@@ -1010,15 +1011,23 @@ function w3_close() {
 
 // Used to toggle the menu on smaller screens when clicking on the menu button
 function openNav() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
+  var xR = document.getElementById("navDemo");
+  if (xR.className.indexOf("w3-show") == -1) {
+    xR.className += " w3-show";
   } else { 
-    x.className = x.className.replace(" w3-show", "");
+    xR.className = xR.className.replace(" w3-show", "");
   }
 }
 
+function openNavCL() {
 
+  if (xR.className.indexOf("w3-show") == -1) {
+    xR.className += " w3-show";
+  } else { 
+    xR.className = xR.className.replace(" w3-show", "");
+  }
+
+}
 
 
 
