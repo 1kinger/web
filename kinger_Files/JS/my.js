@@ -1,6 +1,6 @@
 var pro_0=document.getElementById('Nanly32');
 var pro_1=document.getElementById('Myall');
-var pro_2=document.getElementById('Code2go');
+var pro_2=document.getElementById('BitSpeak');
 var pro_3=document.getElementById('Qube3D');var PRO_MDL=[pro_0,pro_1,pro_2,pro_3];
 
 var PRK_1=["https://www.youtube.com/embed/IoVDOWMxsIM","https://www.youtube.com/embed/IK2QFfiSclc","https://www.youtube.com/embed/ocK-64jsfHM"];
