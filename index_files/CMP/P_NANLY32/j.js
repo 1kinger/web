@@ -8,11 +8,11 @@ Vue.component("p_nanly32", {
     <div id="myPage"><nav class="w3-sidebar w3-bar-block w3-center" style="font-size: 55%; position: fixed; left: 0px; top: 0px; width: 18%; z-index: 555; overflow: hidden;">
     <img style="width: 70%;" src="index_files/MEDIA/IMG/Nanly32/g192.png"> <a href="#H_0" class="w3-bar-item w3-button w3-padding-large"><i aria-hidden="true" class="fa fa-home w3-xlarge"></i><p>HOME</p></a> <a href="#A_0" class="w3-bar-item w3-button w3-padding-large w3-hover-black"><i aria-hidden="true" class="fa fa-user w3-xlarge"></i><p>ABOUT</p></a> <a href="#P_0" class="w3-bar-item w3-button w3-padding-large w3-hover-black"><i aria-hidden="true" class="fa fa-eye w3-xlarge"></i><p>PHOTOS</p></a> <a onclick="CLSrjk(0);" class="w3-bar-item w3-button w3-padding-large w3-hover-black"><i aria-hidden="true" class="fa fa-close w3-xlarge"></i></a></nav>
     <div id="H_0" class="w3-display-container w3-animate-opacity"><img style="width: 100%; max-height: 600px;" src="index_files/MEDIA/IMG/Nanly32/N%202500x1665.jpg"></div> <div id="A_0" class="w3-row-padding w3-padding-64 w3-theme-l1"><div class="w3-quarter"><h2 class="*proekt_name">nanly 32</h2>
-    <p>Nanly 32 is android games colection app that is inspirated from old school MAME32 (ahh whata enjoyble woriless time,,). This app  allow you to play nonstop anywere what you wana , how you wanna  from reach selectio of 500+ games. this app use free game from mostwanted games html5 (HERE HAVE THYR CREDIT !!)that also allow you to save you progres in RAM memory. Once played when you have internet conection , you will be avaibele to play it endles weil the app isht shut it down.. see any video there is better discribed </p></div> <div class="w3-quarter"><div class="w3-card w3-white"><iframe class="FRvideo" src="https://www.youtube.com/embed/IoVDOWMxsIM" style="display: block;" frameborder="0"></iframe> <div class="w3-container">
+    <p>Nanly 32 is android games colection app that is inspirated from old school MAME32 (ahh whata enjoyble woriless time,,). This app  allow you to play nonstop anywere what you wana , how you wanna  from reach selectio of 500+ games. this app use free game from mostwanted games html5 (HERE HAVE THYR CREDIT !!)that also allow you to save you progres in RAM memory. Once played when you have internet conection , you will be avaibele to play it endles weil the app isht shut it down.. see any video there is better discribed </p></div> <div class="w3-quarter"><div class="w3-card w3-white"><iframe class="FRvideo" style="display: block;" frameborder="0"></iframe> <div class="w3-container">
     <h3>playing virtuel games in real world</h3>
-    <p>simple 'best case scenario' exemples </p></div></div></div> <div class="w3-quarter"><div class="w3-card w3-white"><iframe class="FRvideo" src="https://www.youtube.com/embed/IK2QFfiSclc" style="display: block;" frameborder="0"></iframe> <div class="w3-container">
+    <p>simple 'best case scenario' exemples </p></div></div></div> <div class="w3-quarter"><div class="w3-card w3-white"><iframe class="FRvideo" style="display: block;" frameborder="0"></iframe> <div class="w3-container">
     <h3>home made cinematic video</h3>
-    <p>fine art of games trend</p></div></div></div> <div class="w3-quarter"><div class="w3-card w3-white"><iframe class="FRvideo" src="https://www.youtube.com/embed/ocK-64jsfHM" style="display: block;" frameborder="0"></iframe> <div class="w3-container">
+    <p>fine art of games trend</p></div></div></div> <div class="w3-quarter"><div class="w3-card w3-white"><iframe class="FRvideo" style="display: block;" frameborder="0"></iframe> <div class="w3-container">
     <h3>What You See Is What You Get</h3>
     <p>this is simple demonstration</p></div></div></div></div>
     <div id="P_0" class="w3-container w3-padding-64 w3-theme-l5"><div class="w3-row"><div class="w3-col m5"><div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Download</span></div>
@@ -30,3 +30,11 @@ var signqqee = new Vue({
 el:"#Nanly32",
 store: store
 })
+
+
+function mestiVIDEA(a){if(a){let VDO={
+0:"https://www.youtube.com/embed/IoVDOWMxsIM",
+1:"https://www.youtube.com/embed/IK2QFfiSclc",
+2:"https://www.youtube.com/embed/ocK-64jsfHM"}
+     let vdo =document.getElementsByClassName("FRvideo");
+for(i in vdo){vdo[i].src=VDO[i];}}}
