@@ -51,8 +51,8 @@ function w3_open() {var x = document.getElementById("mySidebar");
   x.style.display = "block";}
 
 // Used to toggle the menu on smaller screens when clicking on the menu button
-function openNav() {
   var xR = document.getElementById("navDemo");
+function openNav() {
   if (xR.className.indexOf("w3-show") == -1) {
     xR.className += " w3-show";}else{
 	xR.className = xR.className.replace(" w3-show", "");}}
