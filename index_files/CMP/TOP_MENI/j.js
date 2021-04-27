@@ -1,5 +1,5 @@
 Vue.component("top_meni", {
-    template: `<div class="w3-top">
+    template: `<div>
     <div class="w3-bar w3-theme-d2 w3-left-align">
      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
      <a href="#s1" class="w3-bar-item w3-button" style="background-color:rgba(7,16,132,0.5)"><i class="fa fa-home w3-margin-right"></i> <img src="index_files/MEDIA/IMG/1kinger/l36x36.png" style="width:30px;position:relative;"></a>
