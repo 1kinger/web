@@ -67,7 +67,7 @@ Vue.component("p_myall", {
       <div class="w3-section"><label class="w3-input" type="text">easy profil meanage</label></div>
       <div class="w3-section"><label class="w3-input" type="text">multi cros platform view-abele</label></div>
       <div class="w3-section"><label class="w3-input" type="text">anonmy provacy with email and acc verificatio</label></div>
-      <div class="w3-section"><label class="w3-input" type="text">more info about verification can find <span target="_blank" onclick="window.open('https://mylinks.sytes.net/Payment')"  style="cursor: pointer;color: blue;">here.</span></label></div></form></div></div></div></div></div>
+      <div class="w3-section"><label class="w3-input" type="text">more info about  stars and paymets can find <span target="_blank" onclick="window.open('https://mylinks.sytes.net/Payment')"  style="cursor: pointer;color: blue;">here.</span></label></div></form></div></div></div></div></div>
  <footer class="w3-container w3-teal w3-center"><p>relised <span >7 Oct 2020</span> by <span>1kinger</span></p></footer></div>
 `})
 
